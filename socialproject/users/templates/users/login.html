@@ -1,13 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Document</title>
-</head>
-<body>
-<h1>This is Login Form</h1>
-{%csrf_token%}
-{{form.as_p}}
-</body>
+  </head>
+  <body>
+    <h1>This is Login Form</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+    </form>
+  </body>
 </html>
